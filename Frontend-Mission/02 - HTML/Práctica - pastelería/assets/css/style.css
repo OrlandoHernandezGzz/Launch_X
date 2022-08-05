@@ -90,10 +90,11 @@ body {
     color: var(--white);
     border: none;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .pedido__btn:hover {
-
+    background-color: hsla(1, 100%, 70%, 0.699);
 }
 
 .footer {
@@ -123,4 +124,35 @@ body {
     color: var(--white);
     text-align: center;
     margin-top: 20px;
+}
+
+/* Responsive */
+
+@media (min-width: 768px){
+    .pedido__recetas {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .pedido__form {
+        width: 70%;
+        margin: auto;
+    }
+
+    .footer__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* align-items: center; */
+        gap: 20px;
+    }
+
+    .footer__direccion {
+        width: 70%;
+    }
+
+    .footer__tel {
+        width: 30%;
+    }
 }
