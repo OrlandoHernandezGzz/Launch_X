@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido | TacoNauta</title>
+</head>
+<body>
+    <h1>Aquí se hace el pedido</h1>
+
+    <form action="pedido.js">
+        <label for="nombre">Danos tu nombre TacoNauta:</label> <br>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre"> <br><br>
+
+        <label for="mesa">Tu mesa (Está el numero abajo)</label> <br>
+        <input type="number" name="mesa" id="mesa" placeholder="4"> <br><br>
+
+        <p>¿Para aquí o para llevar?</p>
+        <input type="radio" name="aquiollevar" id="aqui" value="Aquí">
+        <label for="aqui">Roja</label> <br>
+        <input type="radio" name="aquiollevar" id="llevar" value="Llevar">
+        <label for="llevar">Verde</label> <br>
+
+        <p>¿Tacos de Qué?</p>
+        <input type="checkbox" name="mercurio" id="mercurio" value="Mercurio">
+        <label for="mercurio">Mercurio</label>
+        <input type="number" name="mercurioCuantos" id="mercurioCuantos" placeholder="¿Cuántos?"> <br>
+
+        <input type="checkbox" name="venus" id="venus" value="Venus">
+        <label for="venus">Venus</label>
+        <input type="number" name="venusCuantos" id="mercurioCuantos" placeholder="¿Cuántos?"> <br>
+
+        <p>¿Y Para tomar?</p>
+        <select name="refresco" id="refresco">
+            <option value="Coca-Cola">Coca-Cola</option>
+            <option value="Fanta">Fanta</option>
+            <option value="Manzana">Manzana</option>
+            <option value="Sprite">Sprite</option>
+            <option value="Sangria">Sangría</option>
+            <option value="Mango">Mango</option>
+            <option value="Guayaba">Guayaba</option>
+        </select>
+
+        <br><br>
+
+        <input type="reset">
+        <input type="submit">
+
+        <br><br>
+    </form>
+</body>
+</html>
