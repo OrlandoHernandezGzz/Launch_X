@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --logo-color: #0d2bd1; 
+    --color-texto: #7b7c80;
+    --padding-container: 50px 100px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(62,120,238,1) 50%, rgba(215,237,255,1) 50%);
+    width: 100%;
+}
+
+.header__contain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-container);
+}
+
+.header__logo {
+    color: var(--logo-color);
+}
+
+.header__lista {
+    display: flex;
+    list-style: none;
+    gap: 85px;
+    color: var(--color-texto);
+    font-weight: 500;
+}
+
+
+/* SLiDER */
+.slider {
+    display: flex;
+    position:relative; 
+    z-index:1;
+}
+
+.slider__info {
+    width: 50%;
+    height: 700px;
+    padding: 50px 100px;
+}
+
+.slider__title {
+    font-size: 60px;
+    color: #1a2772;
+}
+
+.slider__paragraph {
+    color: var(--color-texto);
+    font-weight: 500;
+    padding: 0 50px 0 0;
+    margin-top: 20px;
+}
+
+.slider__recommends {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.slider__schedule {
+    margin-top: 150px;
+}
+
+.slider__form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 70%;
+    background: #fff;
+    border-radius: 5px;
+    position:absolute; z-index:3;
+    padding: 25px;
+}
+
+.slider__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.slider__inputs div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.slider__inputs > p{
+    color: #1a2772;
+    font-weight: bold;
+}
+
+.slider__output{
+    margin-left: 30px;
+}
+
+.slider__btn button{
+    background: var(--logo-color);
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slider__imagen {
+    background-image: url("../img/slider-img2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+
+/* VACCINES */
+.vaccines {
+    width: 100%;
+    height: 200px;
+    padding: 0px 100px;
+}
+
+.vaccines__img {
+    margin-top: 50px;
+    background: url("../img/vaccines_2.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100px;
+}
+
+/* WHY */
+.why__texts {
+   padding: 0 100px;
+}
+
+.why__title {
+    font-size: 32px;
+    color: #1a2772;
+}
+
+.why__paragraph {
+    width: 40%;
+    line-height: 20px;
+    padding: 20px 100px 0 0;
+    text-align: justify;
+}
+
+.why__cards {
+    padding: 0 100px;
+    margin-top: 50px;
+}
+
+.why__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.why__item {
+    width: 23%;
+    padding: 25px;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px var(--color-texto);
+    box-shadow: 0px 0px 10px 2px #aaaaaa;
+}
