@@ -93,6 +93,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: var(--color-texto);
+    font-weight: bold;
 }
 
 .slider__inputs div{
@@ -146,6 +148,10 @@ body {
 }
 
 /* WHY */
+.why {
+    margin-bottom: 100px;
+}
+
 .why__texts {
    padding: 0 100px;
 }
@@ -160,6 +166,7 @@ body {
     line-height: 20px;
     padding: 20px 100px 0 0;
     text-align: justify;
+    color: var(--color-texto);
 }
 
 .why__cards {
@@ -180,4 +187,81 @@ body {
     border-radius: 5px;
     box-shadow: 5px 5px var(--color-texto);
     box-shadow: 0px 0px 10px 2px #aaaaaa;
+}
+
+.why__icon {
+    background: #d7edff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.why__subtitle {
+    margin-top: 15px;
+    color: #0d2bd1;
+    padding: 0 10px 0 0;
+}
+
+.why__paragraphcard {
+    margin-top: 15px;
+    color: var(--color-texto);
+}
+
+/* PREPARATIONS */
+.preparations {
+    display: flex;
+}
+
+.preparations__img {
+    width: 50%;
+    background: url("../img/preparations-img.svg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.preparations__info {
+    width: 50%;
+    padding: 0 100px;
+}
+
+.preparations__title {
+    color: #1a2772;
+    font-size: 32px;
+}
+
+.preparations__paragraph {
+    margin-top: 20px;
+    line-height: 20px;
+    color: var(--color-texto);
+}
+
+.preparations__cards {
+    margin-top: 50px;
+}
+
+.preparations__card {
+    margin-bottom: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 2px #aaaaaa;
+    border-radius: 5px;
+}
+
+.preparations__card p {
+    padding: 20px;
+    color: var(--color-texto);
+}
+
+.preparations__summary {
+    font-weight: 400; /* peso de la tipografía cuando  no está desplegado */
+    list-style: none; /* ocultamos la flecha */
+    cursor: pointer; /* cambia el cursor del puntero */
+    position: relative;
+    color: #0d2bd1;
+    font-weight: bold;
+}
+
+.preparations__summary::after {
+    position: absolute;
+    content: url("../img/flecha-abajo.svg");
+    top: 0px;
+    right: 0px;
 }
